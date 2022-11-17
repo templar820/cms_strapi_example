@@ -1,5 +1,5 @@
 {
-  "/my-collections": {
+  "/articles": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/MyCollectionListResponse"
+                "$ref": "#/components/schemas/ArticleListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "My-collection"
+        "Article"
       ],
       "parameters": [
         {
@@ -159,7 +159,7 @@
           "style": "deepObject"
         }
       ],
-      "operationId": "get/my-collections"
+      "operationId": "get/articles"
     },
     "post": {
       "responses": {
@@ -168,7 +168,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/MyCollectionResponse"
+                "$ref": "#/components/schemas/ArticleResponse"
               }
             }
           }
@@ -225,23 +225,23 @@
         }
       },
       "tags": [
-        "My-collection"
+        "Article"
       ],
       "parameters": [],
-      "operationId": "post/my-collections",
+      "operationId": "post/articles",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/MyCollectionRequest"
+              "$ref": "#/components/schemas/ArticleRequest"
             }
           }
         }
       }
     }
   },
-  "/my-collections/{id}": {
+  "/articles/{id}": {
     "get": {
       "responses": {
         "200": {
@@ -249,7 +249,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/MyCollectionResponse"
+                "$ref": "#/components/schemas/ArticleResponse"
               }
             }
           }
@@ -306,7 +306,7 @@
         }
       },
       "tags": [
-        "My-collection"
+        "Article"
       ],
       "parameters": [
         {
@@ -320,7 +320,7 @@
           }
         }
       ],
-      "operationId": "get/my-collections/{id}"
+      "operationId": "get/articles/{id}"
     },
     "put": {
       "responses": {
@@ -329,7 +329,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/MyCollectionResponse"
+                "$ref": "#/components/schemas/ArticleResponse"
               }
             }
           }
@@ -386,7 +386,7 @@
         }
       },
       "tags": [
-        "My-collection"
+        "Article"
       ],
       "parameters": [
         {
@@ -400,13 +400,13 @@
           }
         }
       ],
-      "operationId": "put/my-collections/{id}",
+      "operationId": "put/articles/{id}",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/MyCollectionRequest"
+              "$ref": "#/components/schemas/ArticleRequest"
             }
           }
         }
@@ -477,7 +477,7 @@
         }
       },
       "tags": [
-        "My-collection"
+        "Article"
       ],
       "parameters": [
         {
@@ -491,7 +491,7 @@
           }
         }
       ],
-      "operationId": "delete/my-collections/{id}"
+      "operationId": "delete/articles/{id}"
     }
   }
 }
